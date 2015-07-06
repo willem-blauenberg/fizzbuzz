@@ -1,8 +1,17 @@
 document.write("<h1>Welcome to Mada's World</h1><br>");
 
 var x = 0;
+var y = 0;
 
-for (x=0; x <= 100; x++) {
+var enter = prompt("Gimmi a numba");
+enter = parseInt(enter);
+//enter = parseFloat(enter);
+enter = Math.floor(enter);
+y = +enter;
+console.log(y);
+
+
+for (x=0; x <= y; x++) {
 
 	if ( x % 3 == 0 ) {
 		document.write("fizz<br>");
